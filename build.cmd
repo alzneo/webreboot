@@ -3,7 +3,7 @@ setlocal
 cd app
 
 set APPNAME=webreboot
-set VERSION=0.01
+set VERSION=0.02
 
 set LDFLAGS="-X main.appName=%APPNAME% -X main.appVer=%VERSION% -s -w"
 
