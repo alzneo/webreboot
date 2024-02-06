@@ -1,5 +1,5 @@
 var languages = {
-    "ru-RU": {
+    "ru": {
         rebootBtn: "Перезагрузить",
         shutdownBtn: "Выключить",
         cancelMsg: "Есть около минуты, чтобы передумать",
@@ -13,6 +13,6 @@ var languages = {
 
 document.querySelectorAll('[id]').forEach(elem => {
     var id = elem.id;
-    var lang = navigator.language;
+    var lang = navigator.language.substring(0, 2);
     elem.innerHTML = languages[lang][id];
 });
