@@ -7,11 +7,26 @@
     <title>Power switch</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="lang.js" defer></script>
+    <script src="power.js"></script>
   </head>
   <body>
-    <div class="centered">
-      <a class="btn" id="rebootBtn" href="/reboot">Reboot</a>
-      <a class="btn red" id="shutdownBtn" href="/shutdown">Shutdown</a>
+    <div class="centered step" name="firstStep">
+      <a class="btn" id="rebootBtn" href="#">Reboot</a>
+      <a class="btn red" id="shutdownBtn" href="#">Shutdown</a>
+    </div>
+    <div class="centered step hidden" name="secondStep">
+      <div class="btn" id="cancelMsg">You have 1 min to cancel</div>
+      <br/>
+      <a class="btn green" id="cancelBtn" href="#">Cancel</a>
+      <a class="btn red" id="proceedBtn" href="#">Proceed</a>
+    </div>
+    <div class="centered step hidden" name="completeStep">
+        <div class="btn green" id="completeMsg">Complete</div>
+    </div>
+    <div class="centered step hidden" name="errorStep">
+        <div class="btn" id="errorMsg">Unknown error!</div>
+      <br/>
+      <a class="btn green" id="retryBtn" href="#">Retry</a>
     </div>
   </body>
 </html>

@@ -5,7 +5,9 @@ var languages = {
         cancelMsg: "Есть около минуты, чтобы передумать",
         cancelBtn: "Отменить",
         proceedBtn: "Продолжить",
-        completeMsg: "Готово"
+        completeMsg: "Готово",
+        errorMsg: "Неизвестная ошибка!",
+        retryBtn: "Повторить"
     }
 };
 
