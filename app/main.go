@@ -30,7 +30,7 @@ var bind string
 func main() {
 	fmt.Printf("%s %s\n", appName, appVer)
 
-	flag.StringVar(&bind, "bind", ":851", "Listen address")
+	flag.StringVar(&bind, "bind", "localhost:851", "Listen address")
 	flag.BoolVar(&dryRun, "dry-run", false, "Dry run")
 
 	flag.Parse()
